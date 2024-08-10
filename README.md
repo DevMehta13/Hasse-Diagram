@@ -69,8 +69,34 @@ This project provides a Python-based tool to generate and visualize Hasse diagra
 
 ## Installation
 - Install the required packages using pip:
-  
- pip install networkx matplotlib
+
+     ```html
+<!-- Copy Button -->
+<pre>
+  <code id="code-block">
+pip install networkx matplotlib
+  </code>
+</pre>
+
+<script>
+  // Add Copy to Clipboard Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlock = document.getElementById('code-block');
+    const copyButton = document.createElement('button');
+    copyButton.textContent = 'Copy';
+    copyButton.style.marginLeft = '10px';
+    
+    copyButton.addEventListener('click', function() {
+      navigator.clipboard.writeText(codeBlock.textContent).then(function() {
+        copyButton.textContent = 'Copied!';
+        setTimeout(() => copyButton.textContent = 'Copy', 2000);
+      });
+    });
+    
+    codeBlock.parentNode.insertBefore(copyButton, codeBlock.nextSibling);
+  });
+</script>
+
  
 ## Example
 Enter the elements of the poset separated by spaces (e.g., 1 2 3 4 6 12): 1 2 3 4 6 12
