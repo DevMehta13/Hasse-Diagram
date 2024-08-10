@@ -9,12 +9,12 @@ This project provides a Python-based tool to generate and visualize Hasse diagra
 - The poset is defined by a set of elements where the relation a divides b is used to establish order between any two elements a and b.
 - A Hasse diagram is constructed by adding directed edges from a to b if a divides b and no intermediate element exists such that a divides that element and that element divides b.
 
-3.	Graph Representation:
+2.	Graph Representation:
 - The elements of the poset are represented as nodes in a directed acyclic graph (DAG).
 - Edges are added between nodes according to the divisibility relation.
 - Transitive edges are removed to ensure the minimal representation, characteristic of Hasse diagrams.
 
-5.	Visualization:
+3.	Visualization:
 - The graph is plotted using matplotlib, with nodes positioned according to their levels in the poset hierarchy.
 - Arrows are used to indicate the direction of the divisibility relation, with larger elements at higher levels and smaller elements at lower levels.
 
@@ -32,24 +32,24 @@ This project provides a Python-based tool to generate and visualize Hasse diagra
    - b (int): The number to be divided.
 - Returns: True if a divides b, otherwise False.
 
-3.	 generate_hasse_diagram(elements)
+2.	 generate_hasse_diagram(elements)
 - Description: Generates the directed acyclic graph (DAG) representing the Hasse diagram for the given elements.
 - Parameters:
       - elements (list of int): The list of elements in the poset.
 - Returns: A NetworkX DiGraph object representing the Hasse diagram.
 
-5.	 get_node_levels(G)
+3.	 get_node_levels(G)
 - Description: Calculates the level (or height) of each node in the Hasse diagram, where the level corresponds to the node's position in the hierarchy.
 - Parameters:
      - G (NetworkX DiGraph): The graph representing the Hasse diagram. 
 - Returns: A dictionary mapping each node to its level.
 
-7.	plot_hasse_diagram(G)
+4.	plot_hasse_diagram(G)
 - Description: Visualizes the Hasse diagram using matplotlib, with nodes positioned according to their level and arrows indicating divisibility relations.
 - Parameters:
     - G (NetworkX DiGraph): The graph representing the Hasse diagram.
 
-9.	main()
+5.	main()
 - Description: The main function that prompts the user for input, generates the Hasse diagram, and displays it.
   
 ## Usage
