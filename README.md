@@ -7,14 +7,15 @@ How It Works
 Logic
 1.	Divisibility Relation:
 •	The poset is defined by a set of elements where the relation a divides b is used to establish order between any two elements a and b.
+
 •	A Hasse diagram is constructed by adding directed edges from a to b if a divides b and no intermediate element exists such that a divides that element and that element divides b.
 
-2.	Graph Representation:
+3.	Graph Representation:
 •	The elements of the poset are represented as nodes in a directed acyclic graph (DAG).
 •	Edges are added between nodes according to the divisibility relation.
 •	Transitive edges are removed to ensure the minimal representation, characteristic of Hasse diagrams.
 
-3.	Visualization:
+4.	Visualization:
 •	The graph is plotted using matplotlib, with nodes positioned according to their levels in the poset hierarchy.
 •	Arrows are used to indicate the direction of the divisibility relation, with larger elements at higher levels and smaller elements at lower levels.
 Features
