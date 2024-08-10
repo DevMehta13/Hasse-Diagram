@@ -70,3 +70,4 @@ Example
 Enter the elements of the poset separated by spaces (e.g., 1 2 3 4 6 12): 1 2 3 4 6 12
 This input will generate a Hasse diagram with 1 at the top, 12 at the bottom, and edges showing the divisibility relationships among the elements.
  
+![image](https://github.com/user-attachments/assets/9ee1ef82-285d-4354-af80-1b3c8e87d8ed)
