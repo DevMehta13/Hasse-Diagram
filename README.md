@@ -70,7 +70,7 @@ This project provides a Python-based tool to generate and visualize Hasse diagra
 ## Installation
 - Install the required packages using pip:
   ```bash
-pip install networkx matplotlib
+  pip install networkx matplotlib
 
  
 ## Example
